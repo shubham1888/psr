@@ -9,7 +9,7 @@ const Events = () => {
                 </div>
                 <div className="ml-6 border-[#5BA1B2] border-l-2">
                     <h1 className="text-xl font-semibold border-[#5BA1B2] border-b-2 p-4">PSR Health Heroes Awards Video</h1>
-                    <p className="p-4">If you missed this year's Health Heroes Awards, video of the presentation is now available online.</p>
+                    <p className="p-4">If you missed this year&apos;s Health Heroes Awards, video of the presentation is now available online.</p>
                     <button className="bg-red-800 text-white w-1/2 h-10 ml-10 rounded-full text-center">Watch Now &gt;&gt;</button>
                 </div>
             </div>
@@ -17,17 +17,17 @@ const Events = () => {
                 <div className="border-[#5BA1B2] border-t-4 border-l-2 p-4 mb-4">
                     <h1 className="text-2xl font-semibold">Shifting Paradigms: A Grassroots Response to Industry and Climate</h1>
                     <p className="text-red-800 font-semibold">January 23 - January  26</p>
-                    <p>Register now for PSR Pennsylvania's 2nd annual environmental health conference.</p>
+                    <p>Register now for PSR Pennsylvani&apos;s 2nd annual environmental health conference.</p>
                 </div>
                 <div className="border-[#5BA1B2] border-t-4 border-l-2 p-4 mb-4">
                     <h1 className="text-2xl font-semibold">Shifting Paradigms: A Grassroots Response to Industry and Climate</h1>
                     <p className="text-red-800 font-semibold">January 23 - January  26</p>
-                    <p>Register now for PSR Pennsylvania's 2nd annual environmental health conference.</p>
+                    <p>Register now for PSR Pennsylvania&apos;s 2nd annual environmental health conference.</p>
                 </div>
                 <div className="border-[#5BA1B2] border-t-4 border-l-2 p-4 mb-4">
                     <h1 className="text-2xl font-semibold">Shifting Paradigms: A Grassroots Response to Industry and Climate</h1>
                     <p className="text-red-800 font-semibold">January 23 - January  26</p>
-                    <p>Register now for PSR Pennsylvania's 2nd annual environmental health conference.</p>
+                    <p>Register now for PSR Pennsylvania&apos;s 2nd annual environmental health conference.</p>
                 </div>
             </div>
         </div>
