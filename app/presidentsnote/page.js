@@ -8,11 +8,11 @@ export default function PresidentPage() {
     const [countpalyed, setCountpalyed] = useState(0)
     return (
         <div className="flex flex-col bg-slate-800 min-h-screen items-center justify-center">
-            {/* President's Photo */}
+            {/* President&apos;s Photo */}
             <div className="rounded-full overflow-hidden my-8">
                 <Image
                     src="/president.jpeg"
-                    alt="President's portrait"
+                    alt="Presidents portrait"
                     width={600}
                     height={600}
                     className="rounded-full shadow-lg object-cover"
@@ -30,14 +30,14 @@ export default function PresidentPage() {
             {/* Optional: Speech Transcript Panel */}
             {isPlaying && (
                 <div className="mt-8 px-4 py-2 bg-slate-950 rounded-md shadow-md text-white">
-                    <p>President's inspirational speech transcript...</p>
+                    <p>President&apos;s inspirational speech transcript...</p>
                 </div>
             )}
 
             <AudioPlayer src="/speech.mp3" playing={isPlaying} onFinished={() => setIsPlaying(false)} />
 
             <div className="mt-8 text-center text-lg text-white font-semibold leading-tight mb-10">
-                <p>President's impactful quote or message goes here...</p>
+                <p>President&apos;s impactful quote or message goes here...</p>
             </div>
             <div className='rounded-lg text-slate-100 mb-10 px-8 bg-slate-900 py-6 h-[50vh] overflow-y-scroll w-[70vw] shadow-lg'>
                 <p>

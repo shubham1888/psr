@@ -44,7 +44,7 @@ const Header = () => {
                             <div className="h-8 w-0.5 bg-black"></div>
                             <Link href={"/"}>Resources</Link>
                             <div className="h-8 w-0.5 bg-black"></div>
-                            <Link href={"/presidentsnote"}>President's Note</Link>
+                            <Link href={"/presidentsnote"}>President&apos;s Note</Link>
                             <div className="h-8 w-0.5 bg-black"></div>
                             <Link href={"/committee"}>Committee</Link>
                             <button className="w-32 h-10 flex justify-center items-center bg-red-800 text-white rounded-full hover:bg-black hover:text-white">Act Now</button>
@@ -62,7 +62,7 @@ const Header = () => {
                     <Link href={"/"}>Get Involved</Link>
                     <Link href={"/"}>Support</Link>
                     <Link href={"/"}>Resources</Link>
-                    <Link href={"/presidentsnote"}>President's Note</Link>
+                    <Link href={"/presidentsnote"}>President&apos;s Note</Link>
                     <Link href={"/committee"}>Committee</Link>
                     <button className="w-32 h-10 flex justify-center items-center bg-red-800 text-white rounded-full hover:bg-black hover:text-white">Act Now</button>
                     <button className="w-32 h-10 flex justify-center items-center bg-red-800 text-white rounded-full hover:bg-black hover:text-white">Donate</button>
