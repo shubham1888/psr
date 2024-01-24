@@ -14,7 +14,7 @@ const Issues = () => {
                 <h1 className="text-5xl font-semibold border-[#5BA1B2] border-b-4 my-4">Our Focus</h1>
                 <div className="flex justify-center items-center gap-4">
                     <div className="w-1/2 p-6">
-                        <p>PSR advocates on the issues you care about by addressing the dangers that threaten communities, using our medical and public health expertise to:</p>
+                        <p>PSRN advocates on the issues you care about by addressing the dangers that threaten communities, using our medical and public health expertise to:</p>
                     </div>
                     <div className="w-1/2 p-6">
                         <ul>

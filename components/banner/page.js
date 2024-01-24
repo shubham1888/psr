@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const MainBanner = () => {
     return (
-        <div className='min-h-screen w-full relative'>
+        <div className='min-h-screen w-full relative z-20'>
             <Image src={"/earth-banner.jpg"} layout="fill" alt="Earth-Banner" />
             <div className="absolute top-20 left-20 text-white">
                 <p className="text-5xl my-4">We Must Prevent</p>

@@ -1,8 +1,23 @@
+'use client'
 import Image from "next/image"
 import Link from "next/link"
 import { FaSearch } from "react-icons/fa";
+import React from "react";
+import { FaBars } from "react-icons/fa";
+import { IoMdCloseCircle } from "react-icons/io";
 
 const Header = () => {
+    const sidebarref = React.useRef(null)
+    const toggleSideBarFunc = () => {
+        if (sidebarref.current.classList.contains("translate-x-full")) {
+            sidebarref.current.classList.remove("translate-x-full")
+            sidebarref.current.classList.add("translate-x-0")
+        }
+        else {
+            sidebarref.current.classList.remove("translate-x-0")
+            sidebarref.current.classList.add("translate-x-full")
+        }
+    }
     return (
         <div className="group">
             <header className="h-[140px] flex w-full px-6 sticky top-0 left-0 right-0" id="headerdiv">
@@ -10,7 +25,7 @@ const Header = () => {
                     <div className="logo">
                         <Link href={"/"}><Image src={"/psrlogo.webp"} height={250} width={250} alt="Psr logo" priority /></Link>
                     </div>
-                    <div className="nav-items flex flex-col items-center gap-4">
+                    <div className="nav-items lg:flex flex-col items-center gap-4 hidden">
                         <div className="flex justify-end items-center w-full">
                             <div className="flex justify-start items-center gap-8">
                                 <Link href={"/"} >Chapter</Link>
@@ -18,7 +33,7 @@ const Header = () => {
                                 <div className="search"><FaSearch className="text-xl" /></div>
                             </div>
                         </div>
-                        <div className="flex justify-between items-center gap-4 text-lg font-bold">
+                        <div className="flex justify-between items-center gap-4 text-base font-bold">
                             <Link href={"/issues"} className="group/issues">Issues</Link>
                             <div className="h-8 w-0.5 bg-black"></div>
                             <Link href={"/about"} className="group/about">About</Link>
@@ -28,35 +43,31 @@ const Header = () => {
                             <Link href={"/"}>Support</Link>
                             <div className="h-8 w-0.5 bg-black"></div>
                             <Link href={"/"}>Resources</Link>
+                            <div className="h-8 w-0.5 bg-black"></div>
+                            <Link href={"/presidentsnote"}>President's Note</Link>
+                            <div className="h-8 w-0.5 bg-black"></div>
+                            <Link href={"/committee"}>Committee</Link>
                             <button className="w-32 h-10 flex justify-center items-center bg-red-800 text-white rounded-full hover:bg-black hover:text-white">Act Now</button>
                             <button className="w-32 h-10 flex justify-center items-center bg-red-800 text-white rounded-full hover:bg-black hover:text-white">Donate</button>
                         </div>
                     </div>
+                    <FaBars onClick={toggleSideBarFunc} className="text-3xl mx-4" />
                 </nav>
-                {/* <div className='accessibility-menu'></div> */}
-                {/* <div className="mx-auto flex h-screen w-full items-center justify-center bg-gray-200 py-20"> */}
-                {/* <div className="group relative cursor-pointer py-2">
-                    <div className="flex items-center justify-between space-x-5 bg-white px-4">
-                        <a
-                            className="menu-hover my-2 py-2 text-base font-medium text-black lg:mx-4"
-                            onClick=""
-                        >
-                            Our Products
-                        </a>
-                    </div>
-                    <div className="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible" onClick="">
-                        <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Product One</a>
-                        <a className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Product Two</a>
-                    </div>
-                </div> */}
-                {/* </div> */}
             </header>
-            {/* <span className="text-red-500 group-hover/issues:text-gray-500 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, temporibus? Sunt, magni quo modi consectetur soluta blanditiis maiores numquam delectus cumque impedit, nihil placeat a iste tempora eaque nemo pariatur.
-            </span>
-            <span className="text-blue-500 invisible group-hover/about:visible">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, temporibus? Sunt, magni quo modi consectetur soluta blanditiis maiores numquam delectus cumque impedit, nihil placeat a iste tempora eaque nemo pariatur.
-            </span> */}
+            <div ref={sidebarref} className='min-h-screen py-20 z-50 w-80 bg-slate-500 absolute top-0 right-0 transition-transform transform translate-x-full'>
+                <div onClick={toggleSideBarFunc}><IoMdCloseCircle className="text-3xl absolute top-12 right-10" /></div>
+                <div className="flex flex-col justify-between items-center gap-4 text-base font-bold py-10">
+                    <Link href={"/issues"} className="group/issues">Issues</Link>
+                    <Link href={"/about"} className="group/about">About</Link>
+                    <Link href={"/"}>Get Involved</Link>
+                    <Link href={"/"}>Support</Link>
+                    <Link href={"/"}>Resources</Link>
+                    <Link href={"/presidentsnote"}>President's Note</Link>
+                    <Link href={"/committee"}>Committee</Link>
+                    <button className="w-32 h-10 flex justify-center items-center bg-red-800 text-white rounded-full hover:bg-black hover:text-white">Act Now</button>
+                    <button className="w-32 h-10 flex justify-center items-center bg-red-800 text-white rounded-full hover:bg-black hover:text-white">Donate</button>
+                </div>
+            </div>
         </div>
     )
 }

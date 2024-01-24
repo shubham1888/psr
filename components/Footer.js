@@ -24,10 +24,10 @@ const Footer = () => {
                     <div className="flex-row gap-4">
                         <FaFacebookF className="w-fit h-fit rounded-full bg-white text-black p-2" />
                         <div className="flex justify-between items-center">
-                            <FaTwitter className="w-fit h-fit rounded-full bg-white text-black p-2" /><p className="hover:text-red-500 text-sm">PSR <br />ENVIRONMENT</p>
+                            <FaTwitter className="w-fit h-fit rounded-full bg-white text-black p-2" /><p className="hover:text-red-500 text-sm">PSRN <br />ENVIRONMENT</p>
                         </div>
                         <div className="flex justify-between items-center">
-                            <FaTwitter className="w-fit h-fit rounded-full bg-white text-black p-2" /><p className="hover:text-red-500 text-sm">PSR <br />NUCLEAR</p>
+                            <FaTwitter className="w-fit h-fit rounded-full bg-white text-black p-2" /><p className="hover:text-red-500 text-sm">PSRN <br />NUCLEAR</p>
                         </div>
                     </div>
                     <div className="flex-row gap-4">

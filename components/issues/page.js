@@ -27,7 +27,7 @@ const IssuesMain = () => {
                                     <p className="p-2 font-bold">Nuclear Weapons Abolition</p>
                                 </div>
                                 <div className="p-2">
-                                    <p>PSR&apos;s Nuclear Weapons Abolition Program amplifies the health professional voice to increase and broaden grassroots support for nuclear weapons abolition.
+                                    <p>PSRN&apos;s Nuclear Weapons Abolition Program amplifies the health professional voice to increase and broaden grassroots support for nuclear weapons abolition.
 
                                         <br /><br /><span className="text-red-800 font-bold cursor-pointer hover:text-black">Learn More</span></p>
                                 </div>
@@ -45,7 +45,7 @@ const IssuesMain = () => {
                             </div>
                             <div>
                                 <div className="border-b-4 border-cyan-800 p-2 font-bold">Environment & Health</div>
-                                <div className="p-2">PSR&apos;s Environment and Health Program amplifies the voices of health professionals to advocate for strong action to avert catastrophic climate change and promote clean, healthy, safe energy.
+                                <div className="p-2">PSRN&apos;s Environment and Health Program amplifies the voices of health professionals to advocate for strong action to avert catastrophic climate change and promote clean, healthy, safe energy.
 
                                     <br /><br /><span className="text-red-800 font-bold cursor-pointer hover:text-black">Learn More</span></div>
                             </div>
