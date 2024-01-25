@@ -35,13 +35,7 @@ const Header = () => {
                     <div className="flex justify-between items-center gap-4 text-base font-bold">
                         <Link href={"/issues"} className="group/issues">Issues</Link>
                         <div className="h-8 w-0.5 bg-black"></div>
-                        <Link href={"/about"} className="group/about">About</Link>
-                        <div className="h-8 w-0.5 bg-black"></div>
                         <Link href={"/"}>Get Involved</Link>
-                        <div className="h-8 w-0.5 bg-black"></div>
-                        <Link href={"/"}>Support</Link>
-                        <div className="h-8 w-0.5 bg-black"></div>
-                        <Link href={"/"}>Resources</Link>
                         <div className="h-8 w-0.5 bg-black"></div>
                         <Link href={"/presidentsnote"}>President&apos;s Note</Link>
                         <div className="h-8 w-0.5 bg-black"></div>
@@ -56,10 +50,7 @@ const Header = () => {
                 <div onClick={toggleSideBarFunc}><IoMdCloseCircle className="text-3xl absolute top-12 right-10" /></div>
                 <div className="flex flex-col justify-between items-center gap-4 text-base font-bold py-10">
                     <Link href={"/issues"} className="group/issues">Issues</Link>
-                    <Link href={"/about"} className="group/about">About</Link>
                     <Link href={"/"}>Get Involved</Link>
-                    <Link href={"/"}>Support</Link>
-                    <Link href={"/"}>Resources</Link>
                     <Link href={"/presidentsnote"}>President&apos;s Note</Link>
                     <Link href={"/committee"}>Committee</Link>
                     <button className="w-32 h-10 flex justify-center items-center bg-red-800 text-white rounded-full hover:bg-black hover:text-white">Act Now</button>
