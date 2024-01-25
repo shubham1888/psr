@@ -3,7 +3,7 @@ import Image from "next/image"
 const IssuesMain = () => {
     return (
         <div className="flex justify-center items-center my-8">
-            <div>
+            <div className="px-4 md:px-12">
                 <h1 className="text-red-800 text-2xl mb-8 flex justify-between items-center px-4 font-bold">
                     <div>
                         Issues
@@ -12,13 +12,13 @@ const IssuesMain = () => {
                         All Issues &gt;
                     </div>
                 </h1>
-                <div className="flex gap-6">
-                    <div className="w-[500px]">
+                <div className="flex flex-col lg:flex lg:flex-row gap-6 justify-evenly">
+                    <div className="w-full md:w-1/2">
                         <Image src={"/weapons_v2.png"} width={500} height={500} alt="weapon" />
-                        <div className="flex">
+                        <div className="flex flex-col md:flex md:flex-row">
                             <div className="border-r-2 border-cyan-800 h-full">
                                 <p className="p-4 text-xl font-bold">
-                                    <span className="text-red-800 text-5xl font-bold">1,800</span><br />
+                                    <span className="text-red-800 text-2xl md:text-5xl font-bold">1,800</span><br />
                                     nuclear weapons are on high alert
                                 </p>
                             </div>
@@ -34,12 +34,12 @@ const IssuesMain = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[500px]">
+                    <div className="w-full md:w-1/2">
                         <Image src={"/wind_farm.jpg"} width={500} height={500} alt="wild farm" />
-                        <div className="flex">
+                        <div className="flex flex-col md:flex md:flex-row">
                             <div className="border-r-2 border-cyan-800 h-full">
                                 <p className="p-4 text-xl font-bold">
-                                    <span className="text-red-800 text-5xl font-bold">6</span><br />
+                                    <span className="text-red-800 text-2xl md:text-5xl font-bold">6</span><br />
                                     years left to avert the worst effects of climate change, according to the IPCC
                                 </p>
                             </div>

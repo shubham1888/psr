@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Events = () => {
     return (
-        <div className="flex justify-center items-center py-6 px-12">
+        <div className="flex flex-col md:flex md:flex-row justify-center items-center py-6 px-6 md:px-12">
             <div>
                 <div>
                     <Image src={"/health-heroes-awards-video.jpg"} width={500} height={500} alt="health-heroes-awards-video" />
