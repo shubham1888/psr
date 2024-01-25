@@ -19,7 +19,7 @@ const Header = () => {
         }
     }
     return (
-        <header className="h-[140px] flex w-screen px-6  z-40">
+        <header className="h-[140px] flex w-screen px-6  z-40" id="headerdiv">
             <nav className="flex justify-between items-center w-full">
                 <div className="logo">
                     <Link href={"/"}><Image src={"/psrlogo.webp"} height={250} width={250} alt="Psr logo" priority /></Link>
