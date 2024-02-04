@@ -1,9 +1,10 @@
+'use client'
 import Image from "next/image"
 
 const MainBanner = () => {
     return (
         <div className='min-h-screen w-full relative z-20'>
-            <Image src={"/earth-banner.jpg"} layout="fill" alt="Earth-Banner" />
+            <Image src={"/wind_farm.jpg"} layout="fill" alt="Earth-Banner" />
             <div className="absolute top-6 left-6 md:top-20 md:left-20 text-white">
                 <p className="text-xl md:text-3xl lg:text-5xl md:my-4">We Must Prevent</p>
                 <div className="border-t-8 border-l-2 border-cyan-700 p-2 md:p-8 w-full md:w-1/2">

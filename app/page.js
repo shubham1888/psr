@@ -1,14 +1,21 @@
 import MainBanner from '@/components/banner/page'
 import Banner2 from '@/components/banner2/page'
 import Banner3 from '@/components/banner3/page'
+import Carousel from '@/components/carousel'
 import Events from '@/components/events/page'
 import IssuesMain from '@/components/issues/page'
 import RecentNews from '@/components/news/page'
 import Image from 'next/image'
 
 export default function Home() {
+  const DATA = [
+    { image: "https://picsum.photos/seed/random101/500/500" },
+    { image: "https://picsum.photos/seed/random102/500/500" },
+    { image: "https://picsum.photos/seed/random103/500/500" }
+  ]
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen w-full'>
+      <Carousel  />
       <MainBanner />
       <IssuesMain />
       <RecentNews />
